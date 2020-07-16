@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+    <script src="./app/shopFuctions.js"></script>
+    <script src="./app/addproducts.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="heading p-4 text-center">
+        <!-- these class are defined in bootstrap  -->
+        <h2>Add Product</h2>
+    </div>
+    <div class="container form-group">
+        <form action="/api/products" method="post" enctype="multipart/form-data">
+
+            <label for="Productname">Product name</label>
+            <input type="text" class="form-control" id="Productname" name="name" placeholder="Enter Product name">
+
+            <label for="Manufacturer">Manufacturer</label>
+            <input type="text" class="form-control" id="Manufacturer" name="manufacturer"
+                placeholder="Enter Manufacturer name">
+
+            <label for="Price">Price</label>
+            <input type="number" class="form-control" name="price" id="Price">
+
+            <label for="myfile">Upload an Image:</label> <br>
+            <input type="file" name="productimage" class="form-control" id="myfile" />
+            <button type="submit" class="btn btn-primary m-3" id="upload">Upload</button>
+        </form>
+
+
+
+        <!-- <label for="myfile">Upload an Image:</label> <br>
+        <input type="file" id="myfile" name="productimage" class="form-control"> -->
+
+        <!-- <button type="submit" class="btn btn-primary m-3" id="submit">Submit</button> -->
+
+    </div>
+</body>
+
+</html>
