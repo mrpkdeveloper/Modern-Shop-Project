@@ -34,11 +34,33 @@ const products = db.define('products', {              //table name products with
 
 })
 
+
+const cart = db.define('cart', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    name: DataTypes.STRING,
+    manufacturer: DataTypes.STRING,
+    price: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+        defaultValue: 0.0
+
+    },
+    productimage: {
+        type: DataTypes.STRING,
+        unique: true
+    }
+
+})
+
 //test
-db.sync()
-    .then(() => console.log('database synced successfully'))
-    .catch((err) => console.error("error in creating database"))
+// db.sync()
+//     .then(() => console.log('database synced successfully'))
+//     .catch((err) => console.error("error in creating database"))
 
 module.exports = {
-    db, users, products
+    db, users, products, cart
 }
