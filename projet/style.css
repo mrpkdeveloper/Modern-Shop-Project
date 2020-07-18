@@ -191,6 +191,27 @@ li, a {
 
 /*-------------Gallery Content--------------*/
 
+.gallery1h{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 75px;
+   letter-spacing: 0.1em;
+   color: #9BB6C9;
+   text-align: center;
+}
+
+.gallery2h{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 75px;
+   letter-spacing: 0.1em;
+   color: #9BB6C9;
+   text-align: center;
+}
 
 
 
