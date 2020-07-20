@@ -200,6 +200,12 @@ li, a {
    letter-spacing: 0.1em;
    color: #9BB6C9;
    text-align: center;
+   background: #334C5E;
+}
+
+.gallery1{
+   background: #334C5E;
+   display: inline-flex;
 }
 
 .gallery2h{
@@ -211,9 +217,135 @@ li, a {
    letter-spacing: 0.1em;
    color: #9BB6C9;
    text-align: center;
+   background: #334C5E;
+}
+
+.gallery2{
+   background: #334C5E;
 }
 
 
+/*--------Card---------*/
+.productcard{
+   margin-left: 10px;
+   overflow: hidden;
+   background: #FFFFFF;
+   border-radius: 20px;
+   width: 490px;
+   height: 578px;
+   position: relative;
+}
+
+.cardtaghead{
+   margin-top: 10px;
+   margin-left: 20px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 37px;
+   letter-spacing: 0.1em;
+   color: #3F6073;
+}
+
+.cardtagsubhead{
+   margin-left: 20px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: 0.05em;
+   color: #3F6073;
+}
+
+.cardname{
+   margin-left: 20px;
+   margin-top: 90px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 75px;
+   letter-spacing: 0.06em;
+
+   color: #000000;
+}
+
+.shopbtn{
+   margin-left: 20px;
+   padding: 3px 25px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16.5px;
+   line-height: 25px;
+   letter-spacing: 0.05em;   
+   color: #FFFFFF;
+   background: #24343F;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.cardcircle1{
+   width: 405px;
+   height: 405px;
+   margin-top: -190px;
+   margin-left: 250px;
+   border-radius: 50%;
+   background: linear-gradient(228.56deg, #212F3A 14.72%, #3F6073 90.32%);
+   z-index: -2;
+}
+
+.cardcircle2{
+   width: 619px;
+   height: 619px;
+   margin-left: -170px;
+   margin-top: -170px;
+   border-radius: 50%;
+   background: linear-gradient(208.92deg, #C0DCEF 13.85%, rgba(192, 220, 239, 0) 70.9%);
+   z-index: -3;
+}
+
+.productimage{
+   position: absolute;
+   height: 760px;
+   margin-top: -330px;
+}
 
 /*---------------------------Footer-----------------------------*/
 
+.foot{
+   background: #334C5E;
+}
+
+.footerheading{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 45px;
+   /* identical to box height */
+
+   letter-spacing: 0.05em;
+
+   color: #FFFFFF;
+}
+
+.footercontent{
+   display: inline-flex;
+}
+
+.footercontent li{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.05em;
+}
+
+.socialmedia{
+   height: 25px;
+}
