@@ -240,7 +240,6 @@ li, a {
    margin-top: 10px;
    margin-left: 20px;
    font-family: Poppins;
-   font-style: normal;
    font-weight: bold;
    font-size: 25px;
    line-height: 37px;
@@ -251,7 +250,6 @@ li, a {
 .cardtagsubhead{
    margin-left: 20px;
    font-family: Poppins;
-   font-style: normal;
    font-weight: 500;
    font-size: 15px;
    line-height: 22px;
@@ -263,20 +261,19 @@ li, a {
    margin-left: 20px;
    margin-top: 90px;
    font-family: Poppins;
-   font-style: normal;
    font-weight: bold;
    font-size: 50px;
    line-height: 75px;
    letter-spacing: 0.06em;
-
-   color: #000000;
+   color: #9BB5C9;
+   z-index: 1;
+   position: relative;
 }
 
 .shopbtn{
    margin-left: 20px;
    padding: 3px 25px;
    font-family: Poppins;
-   font-style: normal;
    font-weight: 500;
    font-size: 16.5px;
    line-height: 25px;
@@ -286,12 +283,14 @@ li, a {
    border: none;
    border-radius: 15px;
    cursor: pointer;
+   z-index: 1;
+   position: relative;
 }
 
 .cardcircle1{
    width: 405px;
    height: 405px;
-   margin-top: -190px;
+   margin-top: -300px;
    margin-left: 250px;
    border-radius: 50%;
    background: linear-gradient(228.56deg, #212F3A 14.72%, #3F6073 90.32%);
@@ -322,14 +321,10 @@ li, a {
 
 .footerheading{
    font-family: Poppins;
-   font-style: normal;
    font-weight: 600;
    font-size: 30px;
    line-height: 45px;
-   /* identical to box height */
-
    letter-spacing: 0.05em;
-
    color: #FFFFFF;
 }
 
@@ -339,7 +334,6 @@ li, a {
 
 .footercontent li{
    font-family: Poppins;
-   font-style: normal;
    font-weight: 300;
    font-size: 20px;
    line-height: 30px;
