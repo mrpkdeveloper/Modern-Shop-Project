@@ -4,7 +4,7 @@ $(
         // $('#navbar').load('/components/navbar.html', loginIfNeeded)
         $('#navbar').load('/components/navbar.html')
         $('#footer').load('/components/footer.html')
-        $('#content').load('/components/maincontent.html')
+        $('#content').load('/components/home.html')
 
     }
 )

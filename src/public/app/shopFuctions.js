@@ -37,6 +37,11 @@ async function addproductstocart(name, manu, price, productimage, done) {
 
 }
 
+async function fetchproductsfromcart(id, done) {
+    await $.get(`/api/cart`, function (data) {
+        done(data)
+    })
+}
 
 // function createproductcard(product) {
 //     console.log(" in shop.js " + product.productimage)
