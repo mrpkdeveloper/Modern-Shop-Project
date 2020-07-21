@@ -14,7 +14,7 @@ header{
    justify-content: flex-end;
    align-items: center;
    position: relative;
-   height:100px; 
+   height:5rem; 
    left:0px;
    top:0px;
    background: #243541;
@@ -51,8 +51,8 @@ li, a {
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 40px;
-   line-height: 60px;
+   font-size: 36px;
+   line-height: 26px;
    /* identical to box height */
    letter-spacing: 0.05em;
    margin-right: auto;
@@ -62,7 +62,7 @@ li, a {
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 20px;
+   font-size: 13px;
    align-items: center;
    text-align: center;
    letter-spacing: 0.04em;
@@ -84,7 +84,7 @@ li, a {
 
 .circle1{
    width: 733px;
-   height: 733px;
+   height: 620px;
    margin-left: -170px;
    margin-top: -170px;
    background: #1C2C36;
@@ -110,8 +110,8 @@ li, a {
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 100px;
-   line-height: 145px;
+   font-size: 59px;
+   line-height: 102px;
    /* identical to box height, or 145% */
    letter-spacing: 0.04em;
    color: rgba(63, 96, 115, 0.75);
@@ -181,14 +181,14 @@ li, a {
 }
 
 .circle2{
-   width: 733px;
-   height: 733px;
+   width: 435px;
+   height: 435px;
    margin-top: -170px;
-   margin-left: 300px;
+   margin-left: 225px;
    background: rgba(192, 220, 239, 0.65);
    border-radius: 50%;
    z-index: -3;
-   background-image: url(assets/patient.png);
+   /* background-image: url(assets/patient.png); */
    background-repeat: no-repeat;
    background-position: center;
    background-blend-mode: lighten;
@@ -202,8 +202,8 @@ li, a {
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 50px;
-   line-height: 75px;
+   font-size: 44px;
+   line-height: 100px;
    letter-spacing: 0.1em;
    color: #9BB6C9;
    text-align: center;
@@ -221,8 +221,8 @@ li, a {
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 50px;
-   line-height: 75px;
+   font-size: 44px;
+   line-height: 100px;
    letter-spacing: 0.1em;
    color: #9BB6C9;
    text-align: center;
@@ -238,10 +238,11 @@ li, a {
 
 /*--------Card---------*/
 .productcard{
-   margin-left: 3rem;
+   margin-left: 1.5rem;
+   margin-right:2.3rem;
    overflow: hidden;
    background: #FFFFFF;
-   border-radius: 20px;
+   border-radius: 60px;
    width: 360px;
    height: 345px;
    position: relative;
@@ -290,8 +291,8 @@ li, a {
    font-size: 16.5px;
    line-height: 25px;
    letter-spacing: 0.05em;   
-   color: #FFFFFF;
-   background: #24343F;
+   color:black;
+   background: #EBC910;
    border: none;
    border-radius: 15px;
    cursor: pointer;
@@ -321,8 +322,8 @@ li, a {
 
 .productimage{
    position: absolute;
-   height: 439px;
-   margin-top: -288px;
+   height: 265px;
+   margin-top: -208px;
    margin-left: 6rem;
 }
 
