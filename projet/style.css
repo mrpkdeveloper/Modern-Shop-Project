@@ -5,6 +5,7 @@
    box-sizing: border-box;
    padding: 0;
    margin:0;
+   
 }
 
 /*---------------------------Navbar-----------------------------*/
@@ -40,6 +41,10 @@ li, a {
    font-size: 15px;
    line-height: 18px;
    text-decoration: none;
+}
+
+#heading{
+   margin-right: 15rem;
 }
 
 #heading1{
@@ -192,6 +197,8 @@ li, a {
 /*-------------Gallery Content--------------*/
 
 .gallery1h{
+   padding-top: 5rem;
+   padding-bottom: 2rem;
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
@@ -209,6 +216,8 @@ li, a {
 }
 
 .gallery2h{
+   padding-top: 5rem;
+   padding-bottom: 2rem;
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
@@ -221,18 +230,20 @@ li, a {
 }
 
 .gallery2{
+   /* margin-top: 1rem; */
    background: #334C5E;
+   display: inline-flex;
 }
 
 
 /*--------Card---------*/
 .productcard{
-   margin-left: 10px;
+   margin-left: 3rem;
    overflow: hidden;
    background: #FFFFFF;
    border-radius: 20px;
-   width: 490px;
-   height: 578px;
+   width: 360px;
+   height: 345px;
    position: relative;
 }
 
@@ -258,12 +269,12 @@ li, a {
 }
 
 .cardname{
-   margin-left: 20px;
-   margin-top: 90px;
+   margin-left: 10px;
+   margin-top: 20px;
    font-family: Poppins;
    font-weight: bold;
-   font-size: 50px;
-   line-height: 75px;
+   font-size: 49px;
+   line-height: 56px;
    letter-spacing: 0.06em;
    color: #9BB5C9;
    z-index: 1;
@@ -271,6 +282,7 @@ li, a {
 }
 
 .shopbtn{
+   margin-top: 1rem;
    margin-left: 20px;
    padding: 3px 25px;
    font-family: Poppins;
@@ -309,17 +321,20 @@ li, a {
 
 .productimage{
    position: absolute;
-   height: 760px;
-   margin-top: -330px;
+   height: 439px;
+   margin-top: -288px;
+   margin-left: 6rem;
 }
 
 /*---------------------------Footer-----------------------------*/
 
 .foot{
    background: #334C5E;
+   padding-top: 1rem;
 }
 
 .footerheading{
+   margin:auto;
    font-family: Poppins;
    font-weight: 600;
    font-size: 30px;
