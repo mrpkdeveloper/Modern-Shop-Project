@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin:0;
+   
+}
+
+/*---------------------------Navbar-----------------------------*/
+header{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   height:5rem; 
+   left:0px;
+   top:0px;
+   background: #243541;
+}
+
+.navbar{
+   list-style: none;
+}
+
+.navbar li{
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+li a{
+   display: block;
+}
+
+li, a {
+   color: #edf0f1;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 18px;
+   text-decoration: none;
+}
+
+#heading{
+   margin-right: 15rem;
+}
+
+#heading1{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 26px;
+   /* identical to box height */
+   letter-spacing: 0.05em;
+   margin-right: auto;
+}
+
+#heading2{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 13px;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+
+   color: #CDE9FD;
+}
+
+.wishlist, .cart, .account{
+   height: 20px;
+   cursor: pointer;
+   margin-left: 15px;
+   filter: invert(1);
+}
+
+
+/*---------------------------Content-----------------------------*/
+
+/*-------------Main Content--------------*/
+
+.circle1{
+   width: 733px;
+   height: 620px;
+   margin-left: -170px;
+   margin-top: -170px;
+   background: #1C2C36;
+   border-radius: 50%;
+   z-index: -2;
+}
+
+.maincontent{
+   background: #334C5E;
+   padding-top: 40px;
+   padding-left: 40px;
+}
+
+.content{
+   display: inline-flex;
+}
+
+.headcontent{
+   position: absolute;
+}
+
+.subheading{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 59px;
+   line-height: 102px;
+   /* identical to box height, or 145% */
+   letter-spacing: 0.04em;
+   color: rgba(63, 96, 115, 0.75);
+}
+
+.mainheading_blur{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 120px;
+   line-height: 145px;
+   /* identical to box height, or 121% */
+   color: rgba(255, 255, 255, 0.2);
+
+   filter: blur(20px);
+
+   letter-spacing: 0.04em;
+   z-index: -1;
+}
+
+.mainheading{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 120px;
+   line-height: 145px;
+   /* identical to box height, or 121% */
+   position: absolute;
+   color:  #EBC910;
+   letter-spacing: 0.04em;
+   z-index: 0;
+}
+
+.description{
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 50px;
+   /* or 250% */
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: #9BB6C9;
+}
+
+.buy{
+   margin-top: 50px;
+   padding: 3px 25px;
+   background: #EBC910;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 37px;
+}
+
+.frontImage{
+   z-index: 4;
+   position: absolute;
+   height: 70%;
+   margin-left: 140px;
+}
+
+.circle2{
+   width: 435px;
+   height: 435px;
+   margin-top: -170px;
+   margin-left: 225px;
+   background: rgba(192, 220, 239, 0.65);
+   border-radius: 50%;
+   z-index: -3;
+   /* background-image: url(assets/patient.png); */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-blend-mode: lighten;
+}
+
+/*-------------Gallery Content--------------*/
+
+.gallery1h{
+   padding-top: 5rem;
+   padding-bottom: 2rem;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 44px;
+   line-height: 100px;
+   letter-spacing: 0.1em;
+   color: #9BB6C9;
+   text-align: center;
+   background: #334C5E;
+}
+
+.gallery1{
+   background: #334C5E;
+   display: inline-flex;
+}
+
+.gallery2h{
+   padding-top: 5rem;
+   padding-bottom: 2rem;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 44px;
+   line-height: 100px;
+   letter-spacing: 0.1em;
+   color: #9BB6C9;
+   text-align: center;
+   background: #334C5E;
+}
+
+.gallery2{
+   /* margin-top: 1rem; */
+   background: #334C5E;
+   display: inline-flex;
+}
+
+
+/*--------Card---------*/
+.productcard{
+   margin-left: 1.5rem;
+   margin-right:2.3rem;
+   overflow: hidden;
+   background: #FFFFFF;
+   border-radius: 60px;
+   width: 360px;
+   height: 345px;
+   position: relative;
+}
+
+.cardtaghead{
+   margin-top: 10px;
+   margin-left: 20px;
+   font-family: Poppins;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 37px;
+   letter-spacing: 0.1em;
+   color: #3F6073;
+}
+
+.cardtagsubhead{
+   margin-left: 20px;
+   font-family: Poppins;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+   letter-spacing: 0.05em;
+   color: #3F6073;
+}
+
+.cardname{
+   margin-left: 10px;
+   margin-top: 20px;
+   font-family: Poppins;
+   font-weight: bold;
+   font-size: 49px;
+   line-height: 56px;
+   letter-spacing: 0.06em;
+   color: #9BB5C9;
+   z-index: 1;
+   position: relative;
+}
+
+.shopbtn{
+   margin-top: 1rem;
+   margin-left: 20px;
+   padding: 3px 25px;
+   font-family: Poppins;
+   font-weight: 500;
+   font-size: 16.5px;
+   line-height: 25px;
+   letter-spacing: 0.05em;   
+   color:black;
+   background: #EBC910;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   z-index: 1;
+   position: relative;
+}
+
+.cardcircle1{
+   width: 405px;
+   height: 405px;
+   margin-top: -300px;
+   margin-left: 250px;
+   border-radius: 50%;
+   background: linear-gradient(228.56deg, #212F3A 14.72%, #3F6073 90.32%);
+   z-index: -2;
+}
+
+.cardcircle2{
+   width: 619px;
+   height: 619px;
+   margin-left: -170px;
+   margin-top: -170px;
+   border-radius: 50%;
+   background: linear-gradient(208.92deg, #C0DCEF 13.85%, rgba(192, 220, 239, 0) 70.9%);
+   z-index: -3;
+}
+
+.productimage{
+   position: absolute;
+   height: 265px;
+   margin-top: -208px;
+   margin-left: 6rem;
+}
+
+/*---------------------------Footer-----------------------------*/
+
+.foot{
+   background: #334C5E;
+   padding-top: 1rem;
+}
+
+.footerheading{
+   margin:auto;
+   font-family: Poppins;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 45px;
+   letter-spacing: 0.05em;
+   color: #FFFFFF;
+}
+
+.footercontent{
+   display: inline-flex;
+}
+
+.footercontent li{
+   font-family: Poppins;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.05em;
+}
+
+.socialmedia{
+   height: 25px;
+}
