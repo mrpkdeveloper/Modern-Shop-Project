@@ -8,13 +8,13 @@ $(function () {
         console.log("in fetch product function")
         productlist.empty()
         for (product of products) {
-            productlist.append(createproductcard(product))
+            productlist.append(createproductcard2(product))
         }
 
     }).then(() => {
         console.log("inside then")
         // console.log()
-        let buy_btn = $('.btn')
+        let buy_btn = $('.shopbtn')
 
         console.log("in index.js for cart purpose")
 

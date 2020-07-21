@@ -13,7 +13,7 @@ app.use('/', express.static(path.join(__dirname, '/src/public')))  //this file e
 
 app.use('/api', require('./src/routes').route)  //this line execute index.js in api folder
 
-db.sync({ alter: true })
+db.sync({ force: true })
     .then(() => {
         console.log('database synced successfully')
         app.listen(1111, () => { console.log('server started at http://localhost:1111') })
