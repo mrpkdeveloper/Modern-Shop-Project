@@ -2,7 +2,7 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile()
     console.log(" user is " + JSON.stringify(profile))
     var userinfo = document.querySelector('#userinfo')
-    userinfo.innerText = profile.getGivenName()
+    userinfo.innerText = "Welcome To Our site, " + profile.getGivenName()
     var image = document.createElement('img')
     image.setAttribute('src', profile.getImageUrl())
     userinfo.append(image)
