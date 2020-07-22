@@ -1,0 +1,31 @@
+<body>
+    <div class="container">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="userinfo"></div>
+        <button onclick="signout()"> Sign Out</button>
+    </div>
+</body>
+
+<!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+<meta name="google-signin-client_id" content="626330678425-juc9ko55eqqbe50tiir0te85tofhdd7h.apps.googleusercontent.com">
+<script async defer src="https://apis.google.com/js/platform.js"></script>
+<script defer async>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile()
+        console.log(" user is " + JSON.stringify(profile))
+        var userinfo = document.querySelector('#userinfo')
+        // var button = document.getElementById('#button')
+        userinfo.innerText = profile.getGivenName()
+        var image = document.createElement('img')
+        image.setAttribute('src', profile.getImageUrl())
+        userinfo.append(image)
+    }
+
+
+    function signout() {
+        gapi.auth2.getAuthInstance().signOut().then(() => {
+            console.log("user signed out")
+            userinfo.innerText = ""
+        })
+    }
+</script>
