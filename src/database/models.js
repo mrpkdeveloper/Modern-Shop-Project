@@ -43,9 +43,8 @@ const products = db.define('products', {              //table name products with
 
 
 const cart = db.define('cart', {
-    id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
+    email: {
+        type: DataTypes.STRING(50),
         primaryKey: true
     },
     name: DataTypes.STRING,
@@ -62,6 +61,10 @@ const cart = db.define('cart', {
     }
 
 })
+
+
+//associations
+cart.belongsTo(users)
 
 //test
 // db.sync()

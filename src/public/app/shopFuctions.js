@@ -34,8 +34,9 @@ async function adduser(name, email, done) {
     })
 }
 
-async function addproductstocart(name, manu, price, productimage, done) {
+async function addproductstocart(email, name, manu, price, productimage, done) {
     await $.post('/api/cart', {
+        email: email,
         name: name,
         manufacturer: manu,
         price: price,

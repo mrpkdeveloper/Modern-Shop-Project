@@ -32,3 +32,4 @@ function signout() {
         account_name.innerText = "Account"
     })
 }
+

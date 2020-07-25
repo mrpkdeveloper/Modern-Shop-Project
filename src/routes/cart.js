@@ -4,6 +4,7 @@ const route = require('express').Router()
 
 route.post('/', (req, res) => {
     cart.create({
+        email: req.body.email,
         name: req.body.name,
         price: parseFloat(req.body.price),
         manufacturer: req.body.manufacturer,
