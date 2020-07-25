@@ -13,3 +13,5 @@ create user modernshopuser identified with mysql_native_password by 'modernshopp
 grant all privileges on modernshopdb.* to modernshopuser;
 flush privileges;
 ```
+
+Just random text
