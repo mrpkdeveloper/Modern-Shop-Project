@@ -9,10 +9,19 @@ function onSignIn(googleUser) {
     image.setAttribute('src', profile.getImageUrl())
     userinfo.append(image)
 
-
     // this part changes Acoount to username
     console.log(account_name.innerText)
     account_name.innerText = profile.getGivenName()
+
+    //add info about user in cart
+    adduser(profile.getGivenName(), profile.getEmail(), function (p) {
+        // console.log(p)
+        if (p.name == 'SequelizeUniqueConstraintError') {
+            window.alert("user already exit")
+        } else {
+            window.alert(p.name + " new user created")
+        }
+    })
 }
 
 

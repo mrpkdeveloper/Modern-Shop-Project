@@ -7,10 +7,17 @@ const users = db.define('user', {
         autoIncrement: true,
         primaryKey: true
     },
+    email: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+        unique: true,
+        foreignKey: true
+    },
     name: {
         type: DataTypes.STRING(20),
         allowNull: false
     },
+
 })
 
 

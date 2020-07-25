@@ -25,6 +25,15 @@ function addproducts(name, manu, price, productimage, done) {
 
 }
 
+async function adduser(name, email, done) {
+    await $.post('/api/user', {
+        name: name,
+        email: email
+    }, function (data) {
+        done(data)
+    })
+}
+
 async function addproductstocart(name, manu, price, productimage, done) {
     await $.post('/api/cart', {
         name: name,
